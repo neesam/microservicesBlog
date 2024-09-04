@@ -42,4 +42,6 @@ app.post('/events', (req, res) => {
     res.send({});
 })
 
-app.listen(8001);
+app.listen(8001, () => {
+    console.log('Listening on 8001');
+});

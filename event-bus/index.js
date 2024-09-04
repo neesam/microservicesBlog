@@ -21,4 +21,6 @@ app.post("/events", (req, res) => {
     res.send({ status: "OK" });
   });
 
-app.listen(8005);
+app.listen(8005, () => {
+  console.log('Listening on 8005');
+});
