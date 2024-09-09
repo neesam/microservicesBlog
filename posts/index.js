@@ -23,7 +23,7 @@ app.post("/posts", async (req, res) => {
     title,
   };
 
-  await axios.post("http://localhost:8005/events", {
+  await axios.post("http://localhost:4005/events", {
     type: "PostCreated",
     data: {
       id,
@@ -40,6 +40,6 @@ app.post("/events", (req, res) => {
   res.send({});
 });
 
-app.listen(8000, () => {
-  console.log("Listening on 8000");
+app.listen(4000, () => {
+  console.log("Listening on 4000");
 });
